@@ -95,9 +95,11 @@ h2 {
 	0% {
 		transform: rotate(10deg);
 	}
+
 	50% {
 		transform: rotate(-10deg);
 	}
+
 	100% {
 		transform: rotate(10deg);
 	}
