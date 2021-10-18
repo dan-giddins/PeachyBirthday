@@ -1,0 +1,22 @@
+﻿@page "/"
+@namespace PeachyBirthday.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Happy Birthday Peachy ❤</title>
+	<base href="~/" />
+	<link href="css/site.css" rel="stylesheet" />
+	<link href="PeachyBirthday.styles.css" rel="stylesheet" />
+</head>
+<body>
+	<component type="typeof(App)" render-mode="ServerPrerendered" />
+	<script src="_framework/blazor.server.js"></script>
+</body>
+</html>
