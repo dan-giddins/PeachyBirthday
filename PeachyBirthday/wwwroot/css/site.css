@@ -5,8 +5,8 @@ html {
 	color: #ff8b82
 }
 
-#main-img {
-	width: 100%
+h1, h2, img {
+	opacity: 0;
 }
 
 h1, h2 {
@@ -14,5 +14,51 @@ h1, h2 {
 }
 
 h1 {
-	font-size: 8vw
+	font-size: 8vw;
+}
+
+#top-text {
+	margin-bottom: 0;
+	animation: fade-in ease 3s 0s 1 forwards;
+}
+
+#main-img {
+	width: 0;
+	animation: fade-in ease 3s 1s 1 forwards, grow ease 3s 1s 1 forwards, sway ease-in-out 3s 1s infinite forwards;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bottom-text {
+	margin-top: 0;
+	animation: fade-in ease 3s 2s 1 forwards;
+}
+
+#from-text {
+	animation: fade-in ease 3s 3s 1 forwards;
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes grow {
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes sway {
+	0% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(10deg);
+	}
 }
