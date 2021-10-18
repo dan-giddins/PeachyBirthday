@@ -1,3 +1,18 @@
-body {
+html {
 	font-family: Arial, sans-serif;
+	background-color: peachpuff;
+	font-weight: bolder;
+	color: #ff8b82
+}
+
+#main-img {
+	width: 100%
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 8vw
 }
